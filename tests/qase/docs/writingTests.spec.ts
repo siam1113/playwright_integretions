@@ -3,7 +3,7 @@ import { qase } from 'playwright-qase-reporter/dist/playwright';
 
 test(qase(3,'Writing Tests page has correct title'), async ({ page }) => {
   await page.goto('https://playwright.dev/');
-  await page.getByRole('link', { name: 'Doccs' }).click();
+  await page.getByRole('link', { name: 'Docs' }).click();
   await page.getByRole('link', { name: 'Writing tests', exact: true }).click();
   await expect(page.locator('h1')).toHaveText('Writing tests');
 });

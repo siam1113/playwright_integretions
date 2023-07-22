@@ -1,0 +1,14 @@
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="20.698591000005603">
+<testsuite name="xray\installation.spec.ts" timestamp="2023-07-22T07:21:46.737Z" hostname="chromium" tests="1" failures="0" skipped="0" time="11.09" errors="0">
+<testcase name="Installation page has the correct title" classname="xray\installation.spec.ts" time="11.09">
+</testcase>
+</testsuite>
+<testsuite name="xray\writingTests.spec.ts" timestamp="2023-07-22T07:21:46.737Z" hostname="chromium" tests="3" failures="0" skipped="0" time="39.87" errors="0">
+<testcase name="Writing Tests page has correct title" classname="xray\writingTests.spec.ts" time="17.956">
+</testcase>
+<testcase name="Navigate to first test page" classname="xray\writingTests.spec.ts" time="14.135">
+</testcase>
+<testcase name="Navigate to what&apos;s next page" classname="xray\writingTests.spec.ts" time="7.779">
+</testcase>
+</testsuite>
+</testsuites>
