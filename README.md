@@ -1,5 +1,5 @@
 # Playwright Integretions
-Playing with qase playwright integretion
+Playing with playwright integretion
 
 
 # Xray Integretion
