@@ -1,14 +1,19 @@
 import { test, expect } from '@playwright/test';
-import { qase } from 'playwright-qase-reporter/dist/playwright';
 
-test('Writing Tests page has correct title', async ({ page }) => {
+test('Writing Tests page has correct title', async ({ page }, testInfo) => {
+  //Adding Xray properties
+  testInfo.annotations.push({ type: 'test_key', description: 'GM-3' });
+
   await page.goto('https://playwright.dev/');
   await page.getByRole('link', { name: 'Docs' }).click();
   await page.getByRole('link', { name: 'Writing tests', exact: true }).click();
   await expect(page.locator('h1')).toHaveText('Writing tests');
 });
 
-test('Navigate to first test page', async ({ page }) => {
+test('Navigate to first test page', async ({ page }, testInfo) => {
+  //Adding Xray properties
+  testInfo.annotations.push({ type: 'test_key', description: 'GM-4' });
+
   await page.goto('https://playwright.dev/');
   await page.getByRole('link', { name: 'Docs' }).click();
   await page.getByRole('link', { name: 'Writing tests', exact: true }).click();
@@ -16,7 +21,10 @@ test('Navigate to first test page', async ({ page }) => {
   await expect(page.getByRole('heading', { name: 'First testDirect link to First test' })).toBeVisible();
 });
 
-test(`Navigate to what's next page`, async ({ page }) => {
+test(`Navigate to what's next page`, async ({ page }, testInfo) => {
+  //Adding Xray properties
+  testInfo.annotations.push({ type: 'test_key', description: 'GM-5' });
+
   await page.goto('https://playwright.dev/');
   await page.getByRole('link', { name: 'Docs' }).click();
   await page.getByRole('link', { name: 'Writing tests', exact: true }).click();

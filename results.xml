@@ -1,14 +1,30 @@
-<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="20.698591000005603">
-<testsuite name="xray\installation.spec.ts" timestamp="2023-07-22T07:21:46.737Z" hostname="chromium" tests="1" failures="0" skipped="0" time="11.09" errors="0">
-<testcase name="Installation page has the correct title" classname="xray\installation.spec.ts" time="11.09">
+<testsuites id="" name="" tests="4" failures="0" skipped="0" errors="0" time="21.65080200000107">
+<testsuite name="xray\installation.spec.ts" timestamp="2023-07-22T10:34:45.648Z" hostname="chromium" tests="1" failures="0" skipped="0" time="12.252" errors="0">
+<testcase name="Installation page has the correct title" classname="xray\installation.spec.ts" time="12.252">
+<properties>
+<property name="test_key" value="GM-2">
+</property>
+</properties>
 </testcase>
 </testsuite>
-<testsuite name="xray\writingTests.spec.ts" timestamp="2023-07-22T07:21:46.737Z" hostname="chromium" tests="3" failures="0" skipped="0" time="39.87" errors="0">
-<testcase name="Writing Tests page has correct title" classname="xray\writingTests.spec.ts" time="17.956">
+<testsuite name="xray\writingTests.spec.ts" timestamp="2023-07-22T10:34:45.648Z" hostname="chromium" tests="3" failures="0" skipped="0" time="39.041" errors="0">
+<testcase name="Writing Tests page has correct title" classname="xray\writingTests.spec.ts" time="12.427">
+<properties>
+<property name="test_key" value="GM-3">
+</property>
+</properties>
 </testcase>
-<testcase name="Navigate to first test page" classname="xray\writingTests.spec.ts" time="14.135">
+<testcase name="Navigate to first test page" classname="xray\writingTests.spec.ts" time="19.042">
+<properties>
+<property name="test_key" value="GM-4">
+</property>
+</properties>
 </testcase>
-<testcase name="Navigate to what&apos;s next page" classname="xray\writingTests.spec.ts" time="7.779">
+<testcase name="Navigate to what&apos;s next page" classname="xray\writingTests.spec.ts" time="7.572">
+<properties>
+<property name="test_key" value="GM-5">
+</property>
+</properties>
 </testcase>
 </testsuite>
 </testsuites>
