@@ -1,10 +1,18 @@
 # Playwright Integretions
-Playing with playwright integretion
+Playing with playwright integretions
 
 
 # Xray Integretion
-1. Setup playwright and Create your playwright tests.
-2. Set _junit_ as reporter in the `playwright.config.ts` file.
+1. Setup playwright
+2. Create your playwright tests and add this in your test file (mapping xray tests in playwright).
+```typescript
+test('test title', async ({ page }, testInfo) => {
+  //Adding Xray properties
+  testInfo.annotations.push({ type: 'test_key', description: 'GM-2' });
+  await page.goto('https://playwright.dev/');
+});
+```
+3. Set _junit_ as reporter in the `playwright.config.ts` file.
 ```typescript
 reporter: [['junit', { outputFile: 'results.xml' }]],
  ```
