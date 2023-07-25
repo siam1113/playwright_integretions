@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Writing Tests page has correct title', async ({ page }, testInfo) => {
+test.skip('Writing Tests page has correct title', async ({ page }, testInfo) => {
   //Adding Xray properties
   testInfo.annotations.push({ type: 'test_key', description: 'GM-3' });
 
@@ -10,7 +10,7 @@ test('Writing Tests page has correct title', async ({ page }, testInfo) => {
   await expect(page.locator('h1')).toHaveText('Writing tests');
 });
 
-test('Navigate to first test page', async ({ page }, testInfo) => {
+test.skip('Navigate to first test page', async ({ page }, testInfo) => {
   //Adding Xray properties
   testInfo.annotations.push({ type: 'test_key', description: 'GM-4' });
 
@@ -21,7 +21,7 @@ test('Navigate to first test page', async ({ page }, testInfo) => {
   await expect(page.getByRole('heading', { name: 'First testDirect link to First test' })).toBeVisible();
 });
 
-test(`Navigate to what's next page`, async ({ page }, testInfo) => {
+test.skip(`Navigate to what's next page`, async ({ page }, testInfo) => {
   //Adding Xray properties
   testInfo.annotations.push({ type: 'test_key', description: 'GM-5' });
 

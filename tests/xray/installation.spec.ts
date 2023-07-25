@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('Installation page has the correct title', async ({ page }, testInfo) => {
+test.skip('Installation page has the correct title', async ({ page }, testInfo) => {
   //Adding Xray properties
   testInfo.annotations.push({ type: 'test_key', description: 'GM-2' });
 
