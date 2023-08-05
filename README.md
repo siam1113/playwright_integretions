@@ -17,7 +17,7 @@ test('test title', async ({ page }, testInfo) => {
 reporter: [['junit', { outputFile: 'results.xml' }]],
  ```
 4. Run the playwright tests.
-5. Get your API key from XRay `client_id` and `client_secret`.
+5. [Get your API key from XRay](https://help.hcltechsw.com/onetest/hclonetestserver/10.5.1/docs/topics/server_integ_xray_gen_keys.html) `client_id` and `client_secret`.
 6. Get the authentication token.
 ```powershell
 curl -H "Content-Type: application/json" -X POST --data '{ "client_id": "client_id","client_secret": "client_secret" }'  https://xray.cloud.getxray.app/api/v1/authenticate
